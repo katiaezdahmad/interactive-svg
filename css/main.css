@@ -1,0 +1,46 @@
+#left-eye,
+#right-eye {
+  animation: eyes 3s linear infinite;
+}
+
+@keyframes eyes {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+#bear:hover #right-ear,
+#bear:hover #left-ear {
+  transition: ears .5s;
+  animation: ears .5s ease-in forwards;
+}
+
+@keyframes ears {
+
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+
+}
